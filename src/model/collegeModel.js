@@ -1,10 +1,13 @@
 import mongoose from "mongoose";
-const CampusSchema = mongoose.Schema({
+const collegeSchema = mongoose.Schema({
 
-    collegeId:{
-
-    },
-    campusName:{
+    campus_id:{
+        type:mongoose.Schema.Types.ObjectId,
+        required:true,
+        ref:"Campus"
+    
+       },
+    collegeName:{
         type:String,
         required:true
     },
@@ -12,20 +15,9 @@ const CampusSchema = mongoose.Schema({
         type:String,
         required:true
     },
-    address:{
-        province: String,
-        district: String,
-        sector: String,
-        cell: String,
-        village: String,
-    },
-    image:{
-        type:String,
-        required:false
 
-    },
     timeStamps:true
 })
 
-const Campus = mongoose.model("Campus",CampusSchema)
-export default Campus
+const College = mongoose.model("College",collegeSchema)
+export default College

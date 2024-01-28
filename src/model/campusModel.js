@@ -18,7 +18,6 @@ const CampusSchema = mongoose.Schema({
     image:{
         type:String,
         required:false
-
     },
     timeStamps:true
 })

@@ -66,6 +66,5 @@ const studentSchema =  mongoose.Schema({
         default:Date.now
     },
 })
-
 const Student = mongoose.model('Student', studentSchema)
 export default Student 
