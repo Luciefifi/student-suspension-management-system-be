@@ -12,11 +12,6 @@ const studentSchema =  mongoose.Schema({
         type:String,
         required:true
     },
-    status:
-    {
-        enum:["married","single","devorced"]
-
-    },
     Gender:{
         type:String,
         required:true
