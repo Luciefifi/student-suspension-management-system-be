@@ -1,12 +1,12 @@
 import mongoose from "mongoose";
 const studentSchema =  mongoose.Schema({
-    studentid:{
-        type:Number,
+    regNumber:{
+        type:String,
         required:true
     },
     firstName:{
         type:String,
-        required:true
+        required:true  
     },
     lastName:{
         type:String,
