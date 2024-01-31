@@ -27,6 +27,7 @@ class studentController{
           });
          
           await student.save();
+          console.log(student.address)
           res.status(201).json({
             status: "success",
             message: "student created successfully",
