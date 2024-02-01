@@ -20,13 +20,13 @@ const studentSchema =  mongoose.Schema({
         type:Date,
         required:true
     },
-    address: {
-        province: String,
-        district: String,
-        sector: String,
-        cell: String,
-        village: String,
-      },
+    // address: {
+    //     province: String,
+    //     district: String,
+    //     sector: String,
+    //     cell: String,
+    //     village: String,
+    //   },
       telephone:{
         type:String,
         required:true
